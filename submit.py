@@ -13,7 +13,7 @@ run_link = \
 body_dict = {
     "timestamp": datetime.now(timezone.utc).isoformat(),
     "name": "Kirill Levin",
-    "email": "levinkirillkirilllevin@example.com",
+    "email": "levinkirillkirilllevin@gmail.com",
     "resume_link": "https://www.linkedin.com/in/levin-kirill/",
     "repository_link": "https://github.com/Kirill-Levin-dev/",
     "action_run_link": run_link
