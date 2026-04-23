@@ -1,0 +1,20 @@
+name: Submit application
+
+on:
+  workflow_dispatch:
+
+jobs:
+  submit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run script
+        env:
+          SIGNING_SECRET: ${{ secrets.SIGNING_SECRET }}
+        run: python submit.py
